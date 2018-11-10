@@ -15,6 +15,14 @@ struct element {
 
 struct element* dodajk(struct element* Lista, int a)
 { 
+    if(Lista==NULL){
+        Lista=malloc(sizeof(struct element));
+        Lista->i=a;
+        Lista->nastepny=NULL;
+        return Lista;
+    }
+    else
+    {
     struct element *ostatni;
     struct element *tmp;
 
@@ -29,6 +37,7 @@ struct element* dodajk(struct element* Lista, int a)
     tmp->nastepny=ostatni; 
 
     return Lista;
+    }
 }
 
 int main()
