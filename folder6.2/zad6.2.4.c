@@ -6,7 +6,7 @@ n i m, i usuwa z pamięci otrzymaną tablicę.
 #include <stdlib.h>
 #include <stdio.h>
 
-void nowa_tablica(int wiersze, int kolumny, int *tablica)
+void zwolnij(int n, int m, int *tablica[][10])
 {
     
     free(tablica);

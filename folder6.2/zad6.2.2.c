@@ -8,13 +8,8 @@ typu int o wymiarach n na m i zwraca jako wartość wskaźnik do niej.
 
 int** nowa_tablica(int wiersze, int kolumny)
 {
-    int **tablica;
-    tablica=(int**) malloc(wiersze * sizeof(int*));
-    for(int i=0; i<wiersze; i++){
-        tablica[i]=(int*) malloc(kolumny * sizeof(int));
-    }
-
-    return tablica;
+    
+    return malloc(wiersze * sizeof(int [kolumny]));
 }
 int main(int argc, char const *argv[])
 {
